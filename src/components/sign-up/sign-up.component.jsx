@@ -51,7 +51,7 @@ class SignUp extends React.Component {
     }
 
     render() {
-        const { displayName, email, password, confirmPassword }
+        const { displayName, email, password, confirmPassword } = this.state;
         return (
             <div className="sign-up">
                 <h2 className="title">I don't have an account</h2>
@@ -84,7 +84,7 @@ class SignUp extends React.Component {
                     <FormInput
                         type="password"
                         name="confirmPassword"
-                        value={displayName}
+                        value={confirmPassword}
                         onChange={this.handleChange}
                         label="Confirm Password"
                         required
